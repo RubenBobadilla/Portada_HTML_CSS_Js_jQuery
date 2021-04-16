@@ -11,18 +11,15 @@
 
     <!-- Jquery CSS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!--Plugin Slider Jquery -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <!-- Plugin MOMENT JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.js" integrity="sha512-STI3jX2gEOm2Z4JLWBX1XqsXzHLXmK9H+c94IBv3AfM/w2w3zQfP05EZ/Zi4P/uBajPi2SAmdFxQ1UWQtt7gsA==" crossorigin="anonymous"></script>
+    <!-- Incluir stilos Css de jQuery, antes del jQuery UI-->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+    <!--jQuery UI-->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
     <!-- Plugin validacion -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-
-    
 
     <!-- Scripts-->
     <script type="text/javascript" src="js/main.js"></script>
@@ -55,22 +52,40 @@
             </nav>
         </header>
 
-        <!-- Slider -->
-        <div id="slider">
-
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-                <div><img src="img/rojo.jpg" title="The long and winding road"></div>
-                <div><img src="img/cielo.jpg" title="Happy trees"></div>
-              </div>
-
-        </div>
-
         <!-- Contenido -->
         <section id="content">
 
-            <div id="posts">
-                <!-- Cargar Posts desde JSON -->
+            <div id="box">
+                <!-- Cargar Acordeon -->
+                <h2>Sobre mi</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in volutpat neque, vitae
+                            venenatis sapien. Morbi ante tellus, vestibulum sed ex sed, dictum bibendum sem. Nulla rutrum
+                            ultrices eros, accumsan dignissim lacus fringilla sit amet.
+                        </p>
+                    </div>
+
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in volutpat neque, vitae
+                            venenatis sapien. Morbi ante tellus, vestibulum sed ex sed, dictum bibendum sem. Nulla rutrum
+                            ultrices eros, accumsan dignissim lacus fringilla sit amet.
+                        </p>
+                    </div>
+
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in volutpat neque, vitae
+                            venenatis sapien. Morbi ante tellus, vestibulum sed ex sed, dictum bibendum sem. Nulla rutrum
+                            ultrices eros, accumsan dignissim lacus fringilla sit amet.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <aside id="sidebar">
